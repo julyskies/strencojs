@@ -1,0 +1,12 @@
+# Directories
+.github/
+build/test/
+src/
+
+# Files
+.env
+.eslintrc.json
+.travis.yml
+package-lock.json
+test.js
+tsconfig.json
