@@ -33,6 +33,11 @@ const encoded = '%%7z;1tsk1JA!NbAFwzj j&{r(3#"+L%m*{<D%Wrh@iyB(qM!eG)>B/ox/%%';
 const decoded = decode(encoded);
 console.log(decoded); // Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
+
+### Other implementations
+
+- [strenco for Golang](https://github.com/julyskies/strenco)
+
 ### Security
 
 This module is not secure, since its main goal is to make the original value unreadable. There are no additional keys, passphrases or secrets required, meaning that anyone can decode encoded value. It is not recommended to store sensitive data encoded with this module.
