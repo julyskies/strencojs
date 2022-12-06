@@ -27,7 +27,7 @@ console.log(encoded); // %%7z;1tsk1JA!NbAFwzj j&{r(3#"+L%m*{<D%Wrh@iyB(qM!eG)>B/
 ##### Decode encoded string
 
 ```typescript
-import { decode } from './index';
+import { decode } from 'strencojs';
 
 const encoded = '%%7z;1tsk1JA!NbAFwzj j&{r(3#"+L%m*{<D%Wrh@iyB(qM!eG)>B/ox/%%';
 const decoded = decode(encoded);
@@ -45,16 +45,18 @@ For the reference: encoding a string that consists of 10000 symbols takes `2 ms`
 
 Worker threads should be used for the encoding when dealing with big multiline strings.
 
-### Deploy
+### Testing
+
+Deploy project locally
 
 ```shell script
-git clone https://github.com/peterdee/caesar-encoding
-cd ./caesar-encoding
-nvm use 18
+git clone https://github.com/julyskies/strencojs
+cd ./strencojs
+nvm use 12
 npm i
 ```
 
-### Testing
+Run tests
 
 ```shell script
 npm run test
